@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base; */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body, .mainCon {
+    height: 100%;
+}
