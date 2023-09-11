@@ -534,9 +534,55 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-100 {
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.bg-black\/20 {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.bg-gray-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 /* @layer base; */
@@ -545,8 +591,70 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
+  color: white;
 }
 
 html, body, .mainCon {
   height: 100%;
+}
+
+.mainCon {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/bg-img.jpeg);
+  background-size: cover;
+}
+
+.navBar {
+  width: 3%;
+  height: 30%;
+  border-radius: 25px;
+  padding: 5px 0;
+  border: 1px solid rgb(121, 121, 121);
+}
+
+.navBar div {
+  width: 80%;
+  height: 14%;
+  padding: 8px 8px;
+  border-radius: 25px;
+}
+
+.navBar div:hover {
+  background-color: red;
+}
+
+.mainPage {
+  height: 85%;
+  width: 85%;
+  border-radius: 30px;
+  border: 1px solid rgb(121, 121, 121);
+}
+
+.netNav {
+  width: 20%;
+  border-radius: 30px 0 0 30px;
+  border-right: 1px solid rgb(72, 72, 72);
+  padding: 3% 2% 2% 2% ;
+}
+
+.netNav > img {
+  width: 60%;
+}
+
+.netPage {
+  width: 80%
+}
+
+.browse {
+  font-size: .7em;
+}
+
+.trays {
+  position: relative;
+}
+
+.trays img{
+  border-radius: 15px;
+  position: relative;
 }
