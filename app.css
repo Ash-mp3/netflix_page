@@ -546,6 +546,10 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -562,8 +566,8 @@ video {
   gap: 2.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-4 {
@@ -572,6 +576,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .bg-black\/20 {
@@ -583,8 +591,21 @@ video {
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
+.bg-inherit {
+  background-color: inherit;
+}
+
 .bg-white\/10 {
   background-color: rgb(255 255 255 / 0.1);
+}
+
+.bg-white\/20 {
+  background-color: rgb(255 255 255 / 0.2);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .backdrop-blur-md {
@@ -613,7 +634,9 @@ html, body, .mainCon {
   background-size: cover;
 }
 
-.navBar {
+/* left nav bar */
+
+nav {
   width: 3%;
   height: 30%;
   border-radius: 25px;
@@ -621,16 +644,18 @@ html, body, .mainCon {
   border: 1px solid rgb(121, 121, 121);
 }
 
-.navBar div {
+nav div {
   width: 80%;
   height: 14%;
   padding: 8px 8px;
   border-radius: 25px;
 }
 
-.navBar div:hover {
+nav div:hover {
   background-color: red;
 }
+
+/* netflix page */
 
 .mainPage {
   height: 85%;
@@ -638,6 +663,8 @@ html, body, .mainCon {
   border-radius: 30px;
   border: 1px solid rgb(121, 121, 121);
 }
+
+/* left part of netflix page */
 
 .netNav {
   width: 20%;
@@ -654,6 +681,10 @@ html, body, .mainCon {
   font-size: .7em;
 }
 
+h5 {
+  font-size: .9em;
+}
+
 .trays {
   position: relative;
 }
@@ -662,42 +693,90 @@ html, body, .mainCon {
   border-radius: 15px;
 }
 
-.trays div{
+.trays > div{
   position: absolute ;
   bottom: 0px;
   width: 100%;
-  height: 25%;
+  height: 24%;
   border-radius: 0 0 15px 15px ;
-  font-size: .5em;
-  padding-top: 8px;
-  padding-left: 10px;
+  font-size: .8vw;
+  padding: 5px 10px;
 }
 
-.trays > div img {
-  width: 12px;
-  z-index: 2;
-  position: absolute;
-  top: 5px;
-  right: 15px;
+.playBtn {
+  padding: 3% 5%;
+  border-radius: 50%;
+  font-size: .7vw;
 }
 
-/* height: 20%; */
+/* right side of netflix page */
 
 .netPage {
   width: 80%;
   margin: 20px;
 }
 
+/* top search and profile  */
+
 .search {
-  /* background-color: red; */
-  height: 8%;
+  width: 42%;
+}
+
+.nextPage {
+  font-size: .8em;
 }
 
 .searchBar {
-  padding: 5px 250px 5px 10px;
-  border: 1px solid white;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: .8em;
+}
+
+[type='search'] {
+  width: 100%;
+  padding-left: 10px;
+  font-size: .8em;
+}
+
+.account {
+  width: 40%;
+}
+
+.notifys {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: .8em;
+}
+
+.pfp {
+  padding: 7px 10px;
+  width: auto;
   border-radius: 25px;
 }
+
+.pfp img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.pfp div {
+  line-height: 11px;
+}
+
+.pfp > div :first-child {
+  font-size: .7em;
+}
+
+.pfp > div :last-child {
+  font-size: .4em;
+  color: rgb(168, 168, 168);
+}
+
+/* main show/add */
 
 .mianShow {
   background-color: blue;
@@ -723,30 +802,38 @@ html, body, .mainCon {
   width: 18%;
 }
 
+/* popcorn mania shows */
+
 .popcorn {
-  /* background-color: blueviolet; */
   height: 25%;
   overflow: hidden;
+  min-height: 25%;
+  max-height: 25%;
 }
 
 .popDiv {
   height: 83%;
   margin-top: 10px;
   overflow: hidden;
+  /* min-height: 90%; */
 }
 
 .popDiv > div {
   width: 24%;
   border-radius: 10px;
   overflow: hidden;
+  /* min-height: 90%; */
 }
 
-.popDiv > img {
+.popDiv img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 2%;
      object-position: 50% 2%;
+  border-radius: 10px;
 }
+
+/* continue watching shows */
 
 .continue {
   background-color: coral;

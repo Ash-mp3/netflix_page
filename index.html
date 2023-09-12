@@ -9,56 +9,85 @@
 </head>
 <body class="bg-gray-500">
     <div class="mainCon flex items-center justify-center gap-5">
-        <div class="navBar bg-white/10 flex flex-col items-center justify-between backdrop-blur-md">
+        <nav class="navBar bg-white/10 flex flex-col items-center justify-between backdrop-blur-md">
            <div><img src="images/play.png" alt=""></div>
            <div><img src="images/border.png" alt=""></div>
            <div><img src="images/tv.png" alt=""></div>
            <div><img src="images/podcast.png" alt=""></div>
            <div><img src="images/house.png" alt=""></div>
            <div><img src="images/mag.png" alt=""></div>
-        </div>
+        </nav>
         <div class="mainPage flex bg-white/10 backdrop-blur-md ">
             <div class="netNav bg-black/20 flex flex-col justify-between">
                 <img src="images/netflix-logo.png" alt="">
-                <div class="browse flex flex-col gap-3">
-                    <span>Browse</span>
-                    <span>Watchlist</span>
-                    <span>Coming soon</span>
+                <div class="browse flex flex-col gap-4">
+                    <span>
+                        <i class="fa-solid fa-circle-play" style="color: #D81219;"></i> 
+                        Browse
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart"></i>
+                        Watchlist
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
+                        Coming soon
+                    </span>
                 </div>
-                <div class="newTraliers flex flex-col gap-4">
+                <div class="newTraliers flex flex-col gap-6">
                     <h5>New Traliers 🔥</h5>
                     <div class="trays">
-                        <img src="images/witcher.jpeg" alt="">
-                        <div class="backdrop-blur-md">
+                        <img src="images/shadow-and-bone.jpg" alt="">
+                        <div class="bg-white/20 backdrop-blur-md flex justify-between items-center">
                             <span>Shadow and Bone</span> 
-                            <img src="images/play-white.png" alt="">
+                            <div class="playBtn bg-white/20 backdrop-blur-md">
+                                <i class="fa-sharp fa-solid fa-play" style="color: #fff;"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="trays">
-                        <img src="images/witcher.jpeg" alt="">
-                        <div class="backdrop-blur-md">
+                        <img src="images/nightagent.jpg" alt="">
+                        <div class="bg-white/20 backdrop-blur-md flex justify-between items-center">
                             <span>The Night Agent</span> 
-                            <img src="images/play-white.png" alt="">
+                            <div class="playBtn bg-white/20 backdrop-blur-md">
+                                <i class="fa-sharp fa-solid fa-play" style="color: #fff;"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="trays">
                         <img src="images/witcher.jpeg" alt="">
-                        <div class="backdrop-blur-md">
-                            <span>The Witcher</span> 
-                            <img src="images/play-white.png" alt="">
+                        <div class="bg-white/20 backdrop-blur-md flex justify-between items-center">
+                            <span>The Witcher</span>
+                            <div class="playBtn bg-white/20 backdrop-blur-md">
+                               <i class="fa-sharp fa-solid fa-play" style="color: #fff;"></i> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="netPage flex flex-col justify-between">
-                <div class="search flex items-center gap-10">
-                    <div class="nextPage">
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <i class="fa-solid fa-chevron-right"></i>
+                <div class="topBar flex justify-between">
+                    <div class="search flex items-center gap-10">
+                        <div class="nextPage flex gap-4 ">
+                            <i class="fa-solid fa-chevron-left" style="color: rgb(96, 96, 96)"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="searchBar flex items-center backdrop-blur-md">
+                            <i class="fa-solid fa-microphone" style="color: #a1a1a1;"></i>
+                            <input type="search" class="outline-none bg-inherit" placeholder="Search...">
+                        </div>
                     </div>
-                    <div class="searchBar flex items-center gap-3">
-                        <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
-                        <span contenteditable>search...</span>
+                    <div class="account flex gap-5 items-center justify-end">
+                        <div class="notifys backdrop-blur-md flex justify-center items-center">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="pfp backdrop-blur-md flex justify-center items-center gap-2">
+                            <img src="images/Aphex.gif" alt="">
+                            <div class="flex flex-col ">
+                                <span>Asher P Con</span>
+                                <span class="col">@Ashcon</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="mianShow">
@@ -66,22 +95,21 @@
                         <img src="images/peaky.jpg" alt="">
                         <img src="images/peaky-logo.png" alt="">
                     </div>
-                    
                 </div>
                 <div class="popcorn flex flex-col justify-items-end">
                     <h4>Popcorn Mania</h4>
                     <div class=" popDiv flex justify-between">
                         <div>
-                            <img src="images/ash-evil.jpeg" alt="">
+                            <img src="images/brooklyn-99.png" alt="">
                         </div>
                         <div>
-                            <img src="images/brooklyn-99.png" alt="">
+                            <img src="images/readyP1.jpeg" alt="">
                         </div>
                         <div>
                             <img src="images/money-heist.png" alt="">
                         </div>
                         <div>
-                            <img src="images/readyP1.jpeg" alt="">
+                            <img src="images/ash-evil.jpeg" alt="">
                         </div>
                     </div>
                 </div>
