@@ -60,9 +60,7 @@ html, body, .mainCon {
 }
 
 
-.netPage {
-    width: 80%
-}
+
 
 .browse {
     font-size: .7em;
@@ -70,9 +68,100 @@ html, body, .mainCon {
 
 .trays {
     position: relative;
+    
 }
 
 .trays img{
     border-radius: 15px;
+}
+
+.trays div{
+    position: absolute ;
+    bottom: 0px;
+    width: 100%;
+    height: 25%;
+    border-radius: 0 0 15px 15px ;
+    font-size: .5em;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.trays > div img {
+    width: 12px;
+    z-index: 2;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+/* height: 20%; */
+
+.netPage {
+    width: 80%;
+    margin: 20px;
+    
+}
+
+.search {
+    /* background-color: red; */
+    height: 8%;
+}
+
+.searchBar {
+    padding: 5px 250px 5px 10px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.mianShow {
+    background-color: blue;
+    height: 35%;
+    border-radius: 15px;
     position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mianShow :first-child {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 6%;
+}
+
+.mianShow :nth-child(2) {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 18%;
+}
+
+
+.popcorn {
+    /* background-color: blueviolet; */
+    height: 25%;
+    overflow: hidden;
+}
+
+.popDiv {
+    height: 83%;
+    margin-top: 10px;
+    overflow: hidden;
+    
+}
+.popDiv > div {
+    
+    width: 24%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popDiv > img {
+    object-fit: cover;
+    object-position: 50% 2%;
+}
+
+.continue {
+    background-color: coral;
+    height: 19%;
 }
