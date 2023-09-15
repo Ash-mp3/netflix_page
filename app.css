@@ -558,10 +558,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-items-end {
-  justify-items: end;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -576,10 +572,6 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .bg-black\/20 {
@@ -627,6 +619,11 @@ html, body, .mainCon {
   height: 100%;
 }
 
+body {
+  min-height: 650px;
+  min-width: 1100px;
+}
+
 .mainCon {
   width: 100%;
   height: 100%;
@@ -671,6 +668,7 @@ nav div:hover {
   border-radius: 30px 0 0 30px;
   border-right: 1px solid rgb(72, 72, 72);
   padding: 3% 2% 2% 2% ;
+  height: 100%;
 }
 
 .netNav > img {
@@ -681,32 +679,43 @@ nav div:hover {
   font-size: .7em;
 }
 
+.browse > span:nth-child(2), .browse > span:nth-child(3) {
+  color: red;
+}
+
+.newTraliers {
+  height: 70%;
+}
+
 h5 {
   font-size: .9em;
 }
 
 .trays {
   position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .trays img{
-  border-radius: 15px;
+  overflow: hidden;
 }
 
 .trays > div{
   position: absolute ;
-  bottom: 0px;
+  bottom: -1px;
   width: 100%;
-  height: 24%;
+  height: 30%;
   border-radius: 0 0 15px 15px ;
   font-size: .8vw;
   padding: 5px 10px;
 }
 
 .playBtn {
-  padding: 3% 5%;
   border-radius: 50%;
-  font-size: .7vw;
+  font-size: .6vw;
+  height: 85%;
+  padding: 0 .5vw;
 }
 
 /* right side of netflix page */
@@ -815,14 +824,12 @@ h5 {
   height: 83%;
   margin-top: 10px;
   overflow: hidden;
-  /* min-height: 90%; */
 }
 
 .popDiv > div {
   width: 24%;
   border-radius: 10px;
   overflow: hidden;
-  /* min-height: 90%; */
 }
 
 .popDiv img {
@@ -836,6 +843,16 @@ h5 {
 /* continue watching shows */
 
 .continue {
-  background-color: coral;
-  height: 19%;
+  height: 20%;
+}
+
+.continueImg {
+  height: 71%;
+  margin-top: 10px;
+}
+
+.continueImg > div {
+  width: 24%;
+  border-radius: 10px;
+  overflow: hidden;
 }
